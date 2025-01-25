@@ -29,12 +29,12 @@ def sumnatural(num):
 
 print(sumnatural(5))
 # #################################
-def sumnatural(num):
+def fact(num):
     
     if(num==0 or num == 1):
         return 1
     
-    return num*sumnatural(num-1)
+    return num*fact(num-1)
 
 
-print(sumnatural(4))
+print(fact(4))
