@@ -49,15 +49,27 @@ print(c1.varC)
 #-----------------------
 class A:
     varA = "Welcome to Class A"
+    def __init__(self, id):
+        self.id = id  # Initialize the id attribute
+        print(self.id)
+
 class B:
-    varB="welcome to class B"
+    varB = "Welcome to Class B"
 
-class C(A,B):
-    varC = "welcome to class C"    
+class C(A, B):
+    varC = "Welcome to Class C"
+    def __init__(self, id):
+        super().__init__(id)  # Initialize parent class A
 
-c1 = C()
-print(c1.varA)
-print(c1.varB)
-print(c1.varC)
+# Creating an instance of C
+c1 = C("classID")
+
+print(c1.varA)  # Access from class A
+print(c1.varB)  # Access from class B
+print(c1.varC)  # Access from class C
+
+
+# super () method is used to access methods of the
+#parent class.
 
 
