@@ -1,5 +1,5 @@
 #Static Method
-#Methods that dont use the self paarmeter 
+#Methods that dont use the "self" paarmeter 
 
 # we dont need the object in some of the method 
 # so we developed statics method
